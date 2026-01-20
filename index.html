@@ -8,7 +8,9 @@
   </head>
   <body class="bg-[#1A0B2E]">
     <!-- Nav bar -->
-    <nav class="flex justify-between items-center mx-20 mt-5 px-6 p-3">
+    <nav
+      class="hidden sm:flex md:justify-between items-center mx-20 mt-5 px-6 p-3"
+    >
       <div>
         <p class="text-4xl font-extrabold text-white">
           Tech<span
@@ -37,7 +39,28 @@
         <span>→</span>
       </button>
     </nav>
-    <hr class="text-white" />
+
+    <!-- nav responsive -->
+    <nav class="block sm:hidden">
+      <div class="flex justify-between">
+        <div>
+          <p class="text-4xl font-extrabold text-white">
+            Tech
+            <span
+              class="bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent text-4xl"
+            >
+              Wave
+            </span>
+          </p>
+        </div>
+
+        <div>
+          <img src="assets/hamburger-menu.png" alt="menu" />
+        </div>
+      </div>
+    </nav>
+
+    <hr class="text-white opacity-30 font-light" />
     <!-- Banner section -->
     <section class="mt-2 relative">
       <div class="">
@@ -116,7 +139,7 @@
         </p>
       </div>
     </section>
-    <hr class="mx-40 text-white font-light" />
+    <hr class="mx-40 text-white font-light opacity-30" />
     <!-- Rating section -->
     <section class="flex justify-center items-center text-white">
       <div class="grid grid-cols-4 gap-x-32 text-center mt-10 pb-12">
