@@ -8,7 +8,7 @@
   </head>
   <body class="bg-[#1A0B2E]">
     <!-- Nav bar -->
-    <nav class="flex justify-between mx-50 items-center mt-5 p-3">
+    <nav class="flex justify-between items-center mx-20 mt-5 px-6 p-3">
       <div>
         <p class="text-4xl font-extrabold text-white">
           Tech<span
@@ -18,7 +18,7 @@
         </p>
       </div>
 
-      <div class="flex gap-x-16 text-white">
+      <div class="hidden sm:flex gap-x-16 text-white">
         <ul>
           About
         </ul>
@@ -34,6 +34,7 @@
         class="bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] p-3 rounded-2xl text-white"
       >
         Subscribe
+        <span>→</span>
       </button>
     </nav>
     <hr class="text-white" />
@@ -45,7 +46,7 @@
 
         <!-- Circle image -->
         <img
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-60"
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-60 animate-pulse"
           src="assets/hero-circle.png"
           alt=""
         />
@@ -78,15 +79,19 @@
           </button>
           <!-- Button + Subscribe -->
           <div class="flex justify-center items-center gap-6 mt-6">
+            <div>
+              <button
+                class="bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] p-3 rounded-2xl text-white flex items-center gap-x-2"
+              >
+                <img src="assets/spotify.png" alt="" />
+                <span> Listen on Spotify</span>
+              </button>
+            </div>
             <button
-              class="bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] p-3 rounded-2xl text-white"
+              class="p-3 text-green-400 border-2 border-green-400 bg-transparent rounded-4xl flex items-center gap-x-2 animate-pulse"
             >
-              Listen on Spotify
-            </button>
-            <button
-              class="p-2 text-green-400 border-2 border-green-400 bg-transparent rounded-lg"
-            >
-              Subscribe
+              <img class="w-4 h-3" src="assets/message.png" alt="" />
+              <span>Subscribe</span>
             </button>
           </div>
         </div>
@@ -129,7 +134,7 @@
 
         <!-- Column 3 -->
         <div>
-          <p class="text-green-400 text-5xl font-extrabold">4.9</p>
+          <p class="text-green-400 text-5xl font-extrabold">4.9★</p>
           <p>Average Rating</p>
         </div>
 
